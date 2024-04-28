@@ -1,9 +1,9 @@
 "use client";
 
+import { sidebar } from "@/lib/utils";
 import { motion, useCycle } from "framer-motion";
 import Navigation from "./NavigationMenu";
 import MenuToggle from "./ToggleMenu";
-import { sidebar } from "@/lib/utils";
 
 function MobileNav() {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -15,7 +15,10 @@ function MobileNav() {
       custom="100%"
       className="flex lg:hidden"
     >
-      <motion.div className="absolute top-0 bottom-0 left-0 w-full bg-primary z-10" variants={sidebar} />
+      <motion.div
+        className="absolute top-0 bottom-0 left-0 w-full bg-primary z-10"
+        variants={sidebar}
+      />
       <Navigation isOpen={isOpen} handleClick={() => toggleOpen()} />
       <MenuToggle toggle={() => toggleOpen()} isOpen={isOpen} />
     </motion.div>
