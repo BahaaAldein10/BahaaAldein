@@ -33,7 +33,7 @@ function Hero() {
               style={{ perspective: 1000 }}
               className="w-fit text-5"
             >
-              Hi👋🏼 I'm
+              Hi👋🏼 I&apos;m
             </motion.h1>
 
             <motion.h2
@@ -62,8 +62,8 @@ function Hero() {
               Step into my digital playground! With a passion for innovation and
               a mastery of the MERN stack, I specialize in crafting robust,
               scalable, and dynamic web applications tailored to exceed your
-              expectations. Let's bring your ideas to life with cutting-edge
-              technology and unparalleled dedication.
+              expectations. Let&apos;s bring your ideas to life with
+              cutting-edge technology and unparalleled dedication.
             </motion.h3>
 
             <motion.div
