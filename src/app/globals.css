@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply m-0 p-0 scroll-smooth;
+  }
+
+  ::selection {
+    @apply bg-primary text-white;
+  }
+
+  body {
+    @apply bg-black text-white overflow-x-hidden;
+  }
+
+  img {
+    @apply select-none;
+  }
+
+  .glowing-shadow:hover {
+    @apply shadow-[0_0_20px] shadow-primary;
+    @apply shadow-[0_0_30px] shadow-primary;
+  }
+
+  .glass-card {
+    @apply bg-tertiary shadow-md bg-opacity-60 backdrop-blur-md;
+  }
+
+  .gradient01 {
+    @apply absolute top-0 left-[10%] -rotate-45 w-40 h-80 bg-secondary blur-[1000px] -z-10 !important;
+  }
+  .gradient02 {
+    @apply absolute top-[30%] left-[40%] rotate-45 w-80 h-[25rem] bg-secondary blur-[1000px] -z-10 !important;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply lg:mx-auto xl:px-0 md:px-10 p-5 lg:w-[80%] max-w-7xl w-full;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .background-image {
+    @apply bg-center bg-cover bg-no-repeat bg-transparent;
+  }
+
+  /* =======| TYPOGRAPHY|======= */
+
+  .text-1 {
+    @apply text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px];
+  }
+
+  .text-2 {
+    @apply text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+  }
+
+  .text-3 {
+    @apply text-[28px] leading-[36px] md:text-[36px] md:leading-[44px];
+  }
+
+  .text-4 {
+    @apply text-[32px] leading-[40px];
+  }
+
+  .text-5 {
+    @apply text-[28px] leading-[36px];
+  }
+
+  .pg-24 {
+    @apply text-[24px] leading-[36px];
+  }
+
+  .pg-20 {
+    @apply text-[20px] leading-[30px] tracking-[2%];
+  }
+
+  .pg-18 {
+    @apply text-[18px] leading-[28px] tracking-[2%];
+  }
+
+  .pg-16 {
+    @apply text-[16px] leading-[24px];
+  }
+
+  .pg-14 {
+    @apply text-[14px] leading-[20px];
+  }
+
+  .pg-12 {
+    @apply text-[12px] leading-[20px];
+  }
+}
+
+/* =======| SHADCN UI |======= */
+
+.input-field {
+  @apply px-4 py-3 w-full h-[54px] pg-16 bg-tertiary rounded-lg border-none focus-visible:ring-offset-0 focus-visible:ring-transparent !important;
+}
+.textarea-field {
+  @apply px-4 py-3 w-full pg-16 bg-tertiary rounded-lg border-none focus-visible:ring-offset-0 focus-visible:ring-transparent resize-none !important;
+}
+.Button {
+  @apply mt-4 pg-18 rounded-lg glowing-shadow hover:bg-primary hover:scale-105 !important;
+}
+
+/* =======| SWIPER |======= */
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  @apply text-primary;
+}
+.swiper .swiper-pagination-bullet {
+  @apply w-[10px] h-[10px] bg-primary;
+}
+.swiper .swiper-pagination-bullet-active {
+  @apply bg-primary bg-top;
+}
+
+/* =======| ARROW |======= */
+
+.arrow {
+  @apply absolute bottom-10 left-[70%] max-lg:hidden;
+}
+.arrow span {
+  @apply block m-[-10px] rotate-45 w-[1.5vw] h-[1.5vw] border-b-[5px] border-r-[5px] border-white border-solid;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
