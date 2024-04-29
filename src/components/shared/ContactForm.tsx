@@ -30,13 +30,11 @@ function ContactForm() {
     const result = await sendEmail(values);
 
     if (result?.success) {
-      console.log({ data: result.data });
       toast.success("Successfully sent!");
       form.reset();
-      return;
+    } else {
+      toast.error("Something went wrong!");
     }
-
-    toast.error("Something went wrong!");
   }
 
   return (
