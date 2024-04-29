@@ -14,6 +14,7 @@ function Navbar() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
+      className="w-full"
     >
       <div className="container flex-between">
         {/* =======| LOGO |======= */}
@@ -38,9 +39,6 @@ function Navbar() {
         {/* =======| MOBILE NAV |======= */}
         <MobileNav />
       </div>
-
-      {/* =======| WAVE ANIMATION |======= */}
-      {/* <Wave /> */}
     </motion.nav>
   );
 }

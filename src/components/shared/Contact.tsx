@@ -9,8 +9,8 @@ import Title from "./Title";
 
 async function Contact() {
   return (
-    <section id="contact" className="mt-5">
-      <div className="container">
+    <section id="contact">
+      <div className="container overflow-x-hidden">
         {/* =======| TITLE |======= */}
         <Title
           mainTitle="Let's Stay Connected"

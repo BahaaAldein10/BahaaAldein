@@ -9,7 +9,7 @@ import Title from "./Title";
 
 function About() {
   return (
-    <section id="about" className="mt-5">
+    <section id="about">
       <div className="container">
         {/* =======| TITLE |======= */}
         <Title

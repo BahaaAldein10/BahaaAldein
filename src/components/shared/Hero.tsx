@@ -9,7 +9,7 @@ import TitleAnimation from "./TitleAnimation";
 
 function Hero() {
   return (
-    <section className="relative sm:mt-5 select-none">
+    <section className="relative mt-0 overflow-x-visible select-none">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -82,15 +82,17 @@ function Hero() {
             <ArrowAnimation />
           </div>
 
-          {/* =======| IMAGE |======= */}
-          <motion.img
-            initial={{ opacity: 0, scale: 0.75, x: 100 }}
-            whileInView={{ opacity: 1, scale: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            src="/hero/image.png"
-            alt="hero-image"
-          />
+          {/* =======| HERO IMAGE |======= */}
+          <div className="w-full overflow-x-hidden">
+            <motion.img
+              initial={{ opacity: 0, scale: 0.75, x: 100 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              src="/hero/image.png"
+              alt="hero-image"
+            />
+          </div>
         </div>
       </motion.div>
 

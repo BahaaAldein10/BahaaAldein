@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { MotionProps, motion } from "framer-motion";
 
 type PathProps = {
   variants: {
@@ -9,14 +9,19 @@ type PathProps = {
   };
   transition?: { duration: number };
   isOpen: boolean;
-};
+} & MotionProps;
 
 type ToggleMenuProps = {
   toggle: () => void;
   isOpen: boolean;
 };
 
-const Path: React.FC<PathProps> = ({ variants, transition, isOpen }) => (
+const Path: React.FC<PathProps> = ({
+  variants,
+  transition,
+  isOpen,
+  ...motionProps
+}) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
@@ -24,6 +29,7 @@ const Path: React.FC<PathProps> = ({ variants, transition, isOpen }) => (
     strokeLinecap="round"
     variants={variants}
     transition={transition}
+    {...motionProps} // Spread any additional motion-specific props
   />
 );
 
@@ -45,13 +51,16 @@ function ToggleMenu({ toggle, isOpen }: ToggleMenuProps) {
           variants={{
             closed: {
               d: "M 2 9.423 L 20 9.423",
-              opacity: 1,
+              opacity: 1, // Ensure it reappears when closed
               stroke: "#ff0040",
             },
             open: { d: "M 2 9.423 L 20 9.423", opacity: 0, stroke: "#ffffff" },
           }}
           transition={{ duration: 0.1 }}
           isOpen={isOpen}
+          initial="closed"
+          animate={isOpen ? "open" : "closed"}
+          exit="closed"
         />
         <Path
           variants={{

@@ -12,7 +12,7 @@ import Title from "./Title";
 
 function Testimonials() {
   return (
-    <section id="testimonials" className="relative mt-5">
+    <section id="testimonials" className="relative mt-5 w-full">
       <div className="container">
         {/* =======| TITLE |======= */}
         <Title
@@ -35,7 +35,7 @@ function Testimonials() {
               clickable: true,
             }}
             modules={[Navigation, Pagination]}
-            className="relative mt-10 lg:w-[80%] w-full glass-card rounded-2xl"
+            className="relative mt-10 lg:w-[70%] w-full glass-card rounded-2xl"
           >
             <div className="absolute top-10 right-10 flex justify-end">
               <Image

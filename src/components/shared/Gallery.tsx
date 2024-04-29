@@ -19,7 +19,7 @@ function Gallery() {
   };
 
   return (
-    <section id="gallery" className="mt-5">
+    <section id="gallery">
       <div className="container">
         {/* =======| TITLE |======= */}
         <Title

@@ -79,6 +79,10 @@
     @apply bg-black text-white overflow-x-hidden;
   }
 
+  section {
+    @apply mt-5 w-full;
+  }
+
   img {
     @apply select-none;
   }
@@ -96,7 +100,7 @@
     @apply absolute top-0 left-[10%] -rotate-45 w-40 h-80 bg-secondary blur-[1000px] -z-10 !important;
   }
   .gradient02 {
-    @apply absolute top-[30%] left-[40%] rotate-45 w-80 h-[25rem] bg-secondary blur-[1000px] -z-10 !important;
+    @apply absolute top-[30%] sm:left-[40%] left-[20%] rotate-45 sm:w-80 w-40 h-[25rem] bg-secondary blur-[1000px] -z-10 !important;
   }
 }
 
