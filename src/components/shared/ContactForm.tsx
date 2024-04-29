@@ -122,7 +122,7 @@ function ContactForm() {
         <Button
           type="submit"
           disabled={form.formState.isSubmitting}
-          className="mt-4 pg-16"
+          className="mt-4 max-sm:w-full pg-16"
         >
           {form.formState.isSubmitting ? "Submitting..." : "Submit"}
         </Button>
