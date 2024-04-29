@@ -10,7 +10,7 @@ import Title from "./Title";
 async function Contact() {
   return (
     <section id="contact">
-      <div className="container overflow-x-hidden">
+      <div className="container max-sm:overflow-x-hidden">
         {/* =======| TITLE |======= */}
         <Title
           mainTitle="Let's Stay Connected"
