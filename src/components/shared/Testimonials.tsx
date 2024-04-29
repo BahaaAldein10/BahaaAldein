@@ -12,7 +12,7 @@ import Title from "./Title";
 
 function Testimonials() {
   return (
-    <section id="testimonials" className="relative mt-5 w-full">
+    <section id="testimonials" className="relative overflow-x-hidden">
       <div className="container">
         {/* =======| TITLE |======= */}
         <Title
