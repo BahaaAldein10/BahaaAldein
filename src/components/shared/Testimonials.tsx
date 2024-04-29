@@ -37,7 +37,7 @@ function Testimonials() {
             modules={[Navigation, Pagination]}
             className="relative mt-10 lg:w-[70%] w-full glass-card rounded-2xl"
           >
-            <div className="absolute top-10 right-10 flex justify-end">
+            <div className="absolute top-10 right-10 flex justify-end z-10">
               <Image
                 src="/elements/quote.png"
                 alt="quote"
