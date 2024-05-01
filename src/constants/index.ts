@@ -226,7 +226,7 @@ export const socials = [
   {
     title: "linkedin",
     image: "/socials/linkedin.png",
-    url: "https://www.linkedin.com/in/bahaa-aldein-26a051296?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvhmnFq7cRtqVIk0ijj2Vxg%3D%3D",
+    url: "https://www.linkedin.com/in/bahaa-aldein-26a051296",
   },
   {
     title: "github",
