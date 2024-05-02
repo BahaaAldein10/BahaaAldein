@@ -19,7 +19,7 @@ function About() {
           component={
             <Button asChild className="Button">
               <Link
-                href="https://drive.google.com/file/d/1bxf3vTaBe1DgLzkVoQX37oQe70CVpsdR/view"
+                href="https://drive.google.com/file/d/1pJgCCM6XiijDRIR3WmIAPz3hhka1Vij3/view?usp=drive_link"
                 target="_blank"
               >
                 Download CV
