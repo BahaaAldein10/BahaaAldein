@@ -95,6 +95,13 @@ export const gallery = [
     webUrl: "https://evently-pi-five.vercel.app/",
     gitUrl: "https://github.com/BahaaAldein10/Evently.git",
   },
+  {
+    title: "Brainwave",
+    description: "Explore the Possibilities of AI Chatting",
+    image: "/gallery/brainwave.png",
+    webUrl: "https://brainwave-eight-gamma.vercel.app/",
+    gitUrl: "https://github.com/BahaaAldein10/Brainwave.git",
+  },
 ];
 
 export const skills = [
