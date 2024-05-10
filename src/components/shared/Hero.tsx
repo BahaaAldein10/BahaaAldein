@@ -47,7 +47,7 @@ function Hero() {
                 className="text-1 text-transparent bg-clip-text bg-gradient-to-br from-primary to-secondary inline-block"
               />
               <TitleAnimation
-                text="MERN Stack Software Engineer"
+                text="Full Stack Software Engineer"
                 className="text-3 text-transparent bg-clip-text bg-gradient-to-br from-white to-zinc-300 inline-block"
               />
             </motion.h2>
